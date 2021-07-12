@@ -1,0 +1,164 @@
+/*
+
+color-light:#ffb900;
+color-dark: #ff7730;
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  height: 1000px;
+}
+
+.box {
+  height: 520px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  perspective: 1500px;
+  position: relative;
+  height: 520px;
+  width: 350px;
+}
+
+.card__side {
+  width: 350px;
+  height: 520px;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(15, 15, 15, 0.15);
+}
+
+.card__side--front {
+  background-color: #fff;
+}
+
+.card__side--back {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
+
+/*FRONT SIDE*/
+
+.card__picture {
+  height: 230px;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+    url("../img/20210710_151124.jpg");
+
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.card__heading {
+  font-size: 28px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  position: absolute;
+  top: 120px;
+  right: 20px;
+  width: 72%;
+}
+
+.card__heading-span {
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 10px 15px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 187, 0, 0.8),
+    rgba(255, 120, 48, 0.8)
+  );
+}
+
+.card__details {
+  padding: 30px;
+}
+
+.card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card__details ul li {
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+/*BACK SIDE*/
+
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+
+.card__price-box {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+.card__price-only {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card__price-value {
+  font-size: 60px;
+  font-weight: 100;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #777;
+  display: inline-block;
+}
