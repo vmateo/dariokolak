@@ -5,7 +5,7 @@
 .header {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./img/hero.png);
+    url(./img/hero.webp);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -283,7 +283,7 @@
       rgba(227, 78, 52, 0.25),
       rgba(220, 34, 1, 0.25)
     ),
-    url(../img/form.png);
+    url(../img/form.webp);
   background-size: cover;
   background-position: center;
 }

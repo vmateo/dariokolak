@@ -1,0 +1,100 @@
+/****************************
+**** BELLOW 1200px (Landscape tablets)
+*****************************/
+/*1rem = 1em  = 16px */
+
+/* 1200/16 = 75*/
+
+@media (max-width: 75em) {
+  /* 9px / 16px */
+  html {
+    font-size: 56.25%;
+  }
+
+  .header-text-box {
+    left: 35%;
+  }
+}
+
+/****************************
+**** BELLOW 950px (Tablets)
+*****************************/
+
+@media (max-width: 59.4em) {
+  html {
+    font-size: 50%;
+  }
+
+  .grid {
+    column-gap: 9.6rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2rem;
+  }
+
+  .header-text-box {
+    left: 40%;
+  }
+}
+
+/****************************
+**** BELLOW 750px (Small tablets)
+Up this point we want anymore decrease the root font size!
+*****************************/
+
+@media (max-width: 46.8em) {
+  .main-nav-list {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    flex-direction: column;
+  }
+
+  .footer-text {
+    font-size: 1.4rem;
+  }
+}
+
+/****************************
+**** BELLOW 600 px (Phones)
+*****************************/
+
+@media (max-width: 37.5em) {
+  .heading-primary {
+    margin-bottom: 2.4rem;
+    line-height: 1.2;
+    font-size: 4.4rem;
+  }
+
+  .btn:link:not(:last-child),
+  .btn:visited:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    width: 80%;
+    justify-self: center;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+}
