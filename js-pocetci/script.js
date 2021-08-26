@@ -170,6 +170,7 @@ console.log(century);
 // console.log(Number(inputYear) + 25);
 
 // Type coercion
+/*
 console.log("I am " + 23 + " year old");
 console.log("23" - "15" - "4");
 console.log("23" > "18");
@@ -192,3 +193,131 @@ let price;
 if (price) {
   console.log("YUpiii");
 }
+
+
+let height = 0;
+
+if (height) {
+  console.log("YAY! Height is defined");
+} else {
+  console.log("Height is not defined!");
+}
+
+
+// Equality operators: == vs ===
+// Not Equality operators: != vs !==
+const age = "18";
+
+console.log(age == 18);
+console.log(age === 18);
+
+console.log(age != 18); // False
+console.log(age !== 18); // True
+*/
+
+///////////////////////////////////////
+// Logical Operators &&, || , !
+/*
+const hasDriversLicense = true; // A
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const hasEnergy = false;
+
+if ((!hasDriversLicense || !hasGoodVision) && !hasEnergy) {
+  console.log("Dario is able to drive!");
+} else {
+  console.log("Someone else should drive...");
+}
+*/
+
+/////////////////////////////////
+// The Switch statement
+/*
+const day = prompt("Type day");
+
+switch (day) {
+  case "monday":
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    alert("YOOOHOO it is monday");
+    break;
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "friday":
+    console.log("Record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy weekend!");
+    break;
+  default:
+    console.log("Not a valid day");
+}
+
+if (day === "monday") {
+  console.log("Plan course structure");
+  console.log("Go to coding meetup");
+  alert("YOOOHOO it is monday");
+} else if (day === "tuesday") {
+  console.log("Prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("Write code examples");
+} else if (day === "friday") {
+  console.log("Record videos");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("Enjoy weekend!");
+} else {
+  console.log("Not a valid day");
+}
+*/
+//////////////////////////////////////////////
+// Statements vs Expressions
+/*
+3 + 4;
+
+1991;
+
+true && false && !false;
+
+if (23 > 10) {
+  const str = "23 is bigger";
+}
+
+
+
+const me = "Dario";
+console.log(`I'm ${2021 - 1998} years old ${me}`);
+
+// The Conditional (Ternary) operator
+const age = 16;
+
+const drink = age >= 18 ? "wine" : "water";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = "wine";
+} else {
+  drink2 = "water";
+}
+
+*/
+
+// Functions
+
+function greeting() {
+  const firstName = prompt("Please type your first name");
+  const lastName = prompt("Please type your last name");
+  alert(`Hello, ${firstName} ${lastName}. How are you?`);
+}
+
+greeting();
