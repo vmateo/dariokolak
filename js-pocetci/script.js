@@ -362,19 +362,78 @@ if (age >= 18) {
 
 // Function using another function
 
-const add = function (c, d) {
-  return c + d;
-};
+// const add = function (c, d) {
+//   return c + d;
+// };
 
-const add10ToResult = function (a, b) {
-  const result = add(a, b);
-  return result + 10;
-};
+// const add10ToResult = function (a, b) {
+//   const result = add(a, b);
+//   return result + 10;
+// };
 
-add10ToResult(10, 8);
+// add10ToResult(10, 8);
 
-const greeting = function (firstName) {
-  console.log(firstName);
-};
+// const greeting = function (firstName) {
+//   console.log(firstName);
+// };
 
-greeting("Mateo");
+// greeting("Mateo");
+
+// const friends = ["Mateo", "Miro", "Alen", "Benjo", "Darko"];
+// console.log(friends);
+
+// const years = new Array(1991, 1984, 2008, 2020);
+// console.log(years);
+
+// console.log(friends[1]);
+
+// const friend = friends[1];
+// console.log(friend);
+
+// console.log(friends.length);
+
+// friends[2] = "Davor";
+// console.log(friends);
+
+// console.log(friends[friends.length - 1]);
+
+// const calcAge = function (birthYear) {
+//   return 2021 - birthYear;
+// };
+
+// const birthYears = [1998, 2001, 1994];
+
+// const ages = [
+//   calcAge(birthYears[0]),
+//   calcAge(birthYears[1]),
+//   calcAge(birthYears[2]),
+// ];
+
+// console.log(ages);
+
+// Basic Array Operations (Methods)
+
+// const friends = ["Mateo", "Alen", "Miro"];
+
+// Add element
+
+// Changing order
+// let temp = friends[2];
+// friends[2] = friends[0];
+// friends[0] = temp;
+
+// Adding elements to array
+// const newLength = friends.push("Davor"); // Add as  last
+// console.log(newLength);
+// friends.unshift("Darko"); // Add as first
+
+// // Deleting elements from array
+// friends.pop(); // Delete last
+// friends.shift(); // Delete first
+
+// // Find index of an element
+// console.log(friends.indexOf("Alen"));
+
+// console.log(friends.includes("Filip"));
+
+// console.log(friends);
