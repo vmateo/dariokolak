@@ -314,10 +314,67 @@ if (age >= 18) {
 
 // Functions
 
-function greeting() {
-  const firstName = prompt("Please type your first name");
-  const lastName = prompt("Please type your last name");
-  alert(`Hello, ${firstName} ${lastName}. How are you?`);
-}
+// function logger(firstName) {
+//   console.log(`My name is ${firstName}`);
+//   return 5;
+// }
 
-greeting();
+// const greeting = logger("Dario");
+// console.log(greeting);
+
+// function add(firstNumber, secondNumber) {
+//   return firstNumber + secondNumber;
+// }
+
+// console.log(add(3, 9));
+
+// function fruitProcessor(apples, oranges) {
+//   const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+//   return juice;
+// }
+
+// const appleJuice = fruitProcessor(5, 0);
+// console.log(appleJuice);
+
+// function add(x, y) {
+//   const result = x + y;
+//   return result;
+// }
+
+// const result = 9;
+
+///////////////////////////////////////
+// Function Declarations vs. Expressions
+
+// Function declaration
+
+// function calcAge1(birthYear) {
+//   return 2021 - birthYear;
+// }
+
+// // Function expression
+// const calcAge2 = function (birthYear) {
+//   return 2021 - birthYear;
+// };
+
+// // Arrow function
+// const calcAge3 = () => 2021 - birthYear;
+
+// Function using another function
+
+const add = function (c, d) {
+  return c + d;
+};
+
+const add10ToResult = function (a, b) {
+  const result = add(a, b);
+  return result + 10;
+};
+
+add10ToResult(10, 8);
+
+const greeting = function (firstName) {
+  console.log(firstName);
+};
+
+greeting("Mateo");
