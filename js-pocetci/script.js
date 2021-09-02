@@ -437,3 +437,86 @@ if (age >= 18) {
 // console.log(friends.includes("Filip"));
 
 // console.log(friends);
+
+/////////////////////////////////////////
+// OBJECTS
+
+// const darioArray = [
+//   "Dario",
+//   "Kolak",
+//   2021 - 1998,
+//   "developer",
+//   ["Mateo", "Alen", "Miro"],
+// ];
+
+// console.log(darioArray[1]);
+
+// const dario = {
+//   firstName: "Dario",
+//   lastName: "Kolak",
+//   age: 2021 - 1998,
+//   job: "developer",
+//   friends: ["Mateo", "Alen", "Miro"],
+// };
+
+// // Dot notation
+// console.log(dario.firstName);
+// console.log(dario.lastName);
+// console.log(dario.friends);
+
+// // Bracket notation
+
+// const interestedIn = prompt("What do you want to know about Dario");
+
+// if (dario[interestedIn]) {
+//   console.log(dario[interestedIn]);
+// } else {
+//   console.log("Wrong request!");
+// }
+
+///////////////////
+// Object Methods
+
+// const calcAge = function () {
+//   this.age = 2021 - this.birthYear;
+// };
+
+// const dario = {
+//   firstName: "Dario",
+//   lastName: "Kolak",
+//   birthYear: 1998,
+//   job: "developer",
+//   friends: ["Mateo", "Alen", "Miro"],
+// };
+
+// dario.calcAge = calcAge;
+
+// dario.calcAge();
+
+// const mateo = {
+//   firstName: "Mateo",
+//   lastName: "Vuković",
+//   birthYear: 1995,
+//   job: "developer",
+//   friends: ["Dario", "Alen", "Miro"],
+//   print: function () {
+//     console.log("HALOOOOOO");
+//   },
+// };
+
+// mateo.calcAge = calcAge;
+
+// mateo.calcAge();
+
+// console.log(dario);
+// console.log(mateo);
+
+// const arr = [2, 3, 4];
+// arr.push(2);
+// console.log(typeof arr);
+
+console.log("Ja učim programirati");
+
+for (let i = 1; i > 0; i++) {
+  console.log(i);
+}
