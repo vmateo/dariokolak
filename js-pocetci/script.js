@@ -515,8 +515,63 @@ if (age >= 18) {
 // arr.push(2);
 // console.log(typeof arr);
 
-console.log("Ja učim programirati");
+// console.log("Ja učim programirati");
 
-for (let i = 1; i > 0; i++) {
-  console.log(i);
+// for (let i = 1; i < 10; i++) {
+//   console.log(i);
+// }
+
+// const arr = ["mateo", "dario", "jovana", "darko", "ognjen"];
+
+// for (let i = 0; i < 5; i++) {
+//   console.log(arr[i]);
+// }
+
+// for (let i = 1; i < 10; i++) {
+//   for (let j = 1; j < 10; j++) {
+//     console.log(i * j);
+//   }
+//   console.log("-------- GUTTER ---------------");
+// }
+
+// for (let i = 1; i < 10; i++) {
+//   console.log(i);
+// }
+
+// for (let i = 9; i > 0; i--) {
+//   console.log(i);
+// }
+
+// for (let exercise = 1; exercise < 4; exercise++) {
+//   console.log(`-------- Starting exercise ${exercise}`);
+
+//   for (let rep = 1; rep < 6; rep++) {
+//     console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♀️`);
+//   }
+// }
+
+// const arr = ["mateo", "dario", "jovana", "darko", "ognjen", "Anto"];
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+for (let i = 0; i < 6; i++) {
+  if (i == 3) {
+    // continue;
+    break;
+  } else {
+    console.log(i);
+  }
 }
+
+// let dice = Math.trunc(Math.random() * 1026) + 1;
+// let counter = 0;
+
+// while (dice !== 924) {
+//   console.log(dice);
+//   counter++;
+//   dice = Math.trunc(Math.random() * 1026) + 1;
+// }
+
+// console.log(`You have won! You needed ${counter} chances!`);
